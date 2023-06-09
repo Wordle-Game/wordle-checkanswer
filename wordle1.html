@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viwport" content="width=device-width, inital-scale=1.0">
+    <title>Document</title>    
+</head>
+<body>
+    <style>
+        input {
+            width: 50px;
+            height: 50px;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+
+    <input class="input">
+    <input class="input">
+    <input class="input">
+    <input class="input">
+    <input class="input">
+    <button>제출</button>
+
+    <script>
+    var answer = 'abcd'; 
+    document.querySelector('button').addEventListener('click', 
+        
+    function checkInput() {
+        
+        var input = document.querySelectorAll('.input');
+            
+        if (input.length != 1) {
+                return alert('한자리만 입력해주세요');
+         }
+         if (!/[a-zA-Z]/.test(input[i])) { 
+                return alert("영어 문자를 입력하세요.");
+        } return true;
+    }) // 검사하는 코드
+    
+    </script>
+    </body>
