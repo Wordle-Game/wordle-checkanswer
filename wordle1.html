@@ -24,19 +24,21 @@
     <button>제출</button>
 
     <script>
-    var answer = 'abcd'; 
     document.querySelector('button').addEventListener('click', 
         
     function checkInput() {
         
         var input = document.querySelectorAll('.input');
-            
-        if (input.length != 1) {
-                return alert('한자리만 입력해주세요');
-         }
-         if (!/[a-zA-Z]/.test(input[i])) { 
-                return alert("영어 문자를 입력하세요.");
+
+        //for (let i = 0; i <5; i++) { 
+        if (input[i].value.length != 1) {
+            return alert('한자리만 입력해주세요');
+        }
+
+        if (!/[a-zA-Z]/.test(input.value)) { 
+            return alert("영어 문자를 입력하세요.");
         } return true;
+   // }
     }) // 검사하는 코드
     
     </script>
