@@ -30,16 +30,17 @@
         
         var input = document.querySelectorAll('.input');
 
-        //for (let i = 0; i <5; i++) { 
+        for (let i = 0; i <5; i++) { 
         if (input[i].value.length != 1) {
             return alert('한자리만 입력해주세요');
         }
 
-        if (!/[a-zA-Z]/.test(input.value)) { 
+        if (!/[a-zA-Z]/.test(input[i].value)) { 
             return alert("영어 문자를 입력하세요.");
-        } return true;
-   // }
+        } 
+    }   return true;
     }) // 검사하는 코드
     
+   
     </script>
     </body>
